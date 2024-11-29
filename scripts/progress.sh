@@ -25,17 +25,20 @@ for i in $(seq 0 99); do
 
     # Apply new percentage logic
     if [[ $percentage -le 50 ]]; then
-        magick -size 300x50 xc:none \
-            -gravity center -font "$font_path" -pointsize 24 -fill red -annotate +0+0 "Loading..." \
-            "$output_dir/progress-$(printf "%02d" $i).png"
+        true
+        # This cannot be rendered properly
+        #magick -size 300x50 xc:none \
+        #    -gravity center -font "$font_path" -pointsize 20 -fill red -annotate +0+0 "Loading..." \
+        #    "$output_dir/progress-$(printf "%02d" $i).png"
     else
         percentage=$(( (percentage - 50) * 2 )) # For percentages > 50, scale to 0-100
 
         width=$((10 + 280 * percentage / 100)) # Adjust the width based on the new percentage
     
         # Create the progress bar image
-        magick -size 300x50 xc:none \
-            -fill white -stroke none -draw "roundrectangle 10,20,$width,30,5,5" \
+        # roundrectangle x1,y1,x2,y2,radiusX,radiusY
+        magick -size 300x30 xc:none \
+            -fill white -stroke none -draw "roundrectangle 10,13,$width,18,2,2" \
             -gravity center -font "$font_path" -pointsize 24 -fill red -annotate +0+0 "${percentage}%" \
             "$output_dir/progress-$(printf "%02d" $i).png"
     
