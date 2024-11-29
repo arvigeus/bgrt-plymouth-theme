@@ -1,0 +1,101 @@
+[Plymouth Theme]
+Name[be]=BGRT-Plymouth-Theme
+Name[cs]=BGRT-Plymouth-Theme
+Name[da]=BGRT-Plymouth-Theme
+Name[de]=BGRT-Plymouth-Theme
+Name[eo]=BGRT-Plymouth-Theme
+Name[es]=BGRT-Plymouth-Theme
+Name[eu]=BGRT-Plymouth-Theme
+Name[fr]=BGRT-Plymouth-Theme
+Name[fur]=BGRT-Plymouth-Theme
+Name[hi]=BGRT-Plymouth-Theme
+Name[hr]=BGRT-Plymouth-Theme
+Name[hu]=BGRT-Plymouth-Theme
+Name[id]=BGRT-Plymouth-Theme
+Name[it]=BGRT-Plymouth-Theme
+Name[lt]=BGRT-Plymouth-Theme
+Name[ka]=BGRT-Plymouth-Theme
+Name[nl]=BGRT-Plymouth-Theme
+Name[pa]=BGRT-Plymouth-Theme
+Name[pl]=BGRT-Plymouth-Theme
+Name[pt_BR]=BGRT-Plymouth-Theme
+Name[ro]=BGRT-Plymouth-Theme
+Name[ru]=BGRT-Plymouth-Theme
+Name[sr]=BGRT-Plymouth-Theme
+Name[sv]=BGRT-Plymouth-Theme
+Name[uk]=BGRT-Plymouth-Theme
+Name[zh_CN]=BGRT-Plymouth-Theme
+Name[ms]=BGRT-Plymouth-Theme
+Name[he]=BGRT-Plymouth-Theme
+Name[fa]=BGRT-Plymouth-Theme
+Name[fi]=BGRT-Plymouth-Theme
+Name[ie]=BGRT-Plymouth-Theme
+Name[gl]=BGRT-Plymouth-Theme
+Name[cy]=BGRT-Plymouth-Theme
+Name[kk]=BGRT-Plymouth-Theme
+Name[sl]=BGRT-Plymouth-Theme
+Name[el]=BGRT-Plymouth-Theme
+Name=BGRT-Plymouth-Theme
+Description=Customized Jimmac's spinner theme using the ACPI BGRT graphics as background
+ModuleName=two-step
+
+[two-step]
+Font=Cantarell 12
+TitleFont=Cantarell Light 30
+ImageDir=/usr/share/plymouth/themes/bgrt-plymouth-theme/images
+DialogHorizontalAlignment=.5
+DialogVerticalAlignment=.65
+TitleHorizontalAlignment=.5
+TitleVerticalAlignment=.65
+HorizontalAlignment=.5
+VerticalAlignment=.7
+WatermarkHorizontalAlignment=.5
+WatermarkVerticalAlignment=.96
+Transition=none
+TransitionDuration=0.0
+BackgroundStartColor=0x000000
+BackgroundEndColor=0x000000
+ProgressBarBackgroundColor=0x606060
+ProgressBarForegroundColor=0xffffff
+DialogClearsFirmwareBackground=false
+MessageBelowAnimation=true
+
+[boot-up]
+UseEndAnimation=false
+UseFirmwareBackground=true
+
+[shutdown]
+UseEndAnimation=false
+UseFirmwareBackground=true
+
+[reboot]
+UseEndAnimation=false
+UseFirmwareBackground=true
+
+[updates]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Installing Updates...
+SubTitle=Do not turn off your computer
+
+[system-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Upgrading System...
+SubTitle=Do not turn off your computer
+
+[firmware-upgrade]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Upgrading Firmware...
+SubTitle=Do not turn off your computer
+
+[system-reset]
+SuppressMessages=true
+ProgressBarShowPercentComplete=true
+UseProgressBar=true
+Title=Resetting System...
+SubTitle=Do not turn off your computer
