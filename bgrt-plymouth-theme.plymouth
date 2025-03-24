@@ -6,7 +6,7 @@ ModuleName=two-step
 [two-step]
 Font=Cantarell 12
 TitleFont=Cantarell Light 30
-ImageDir=/usr/share/plymouth/themes/bgrt-mac-style/resources
+ImageDir=/usr/share/plymouth/themes/bgrt-plymouth-theme/resources
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.7
 TitleHorizontalAlignment=.5
